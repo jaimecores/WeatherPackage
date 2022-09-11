@@ -1,0 +1,48 @@
+{
+    "name": "jaimecores/weatherpackage",
+    "description": "5-day weather forecast",
+    "license": "MIT",
+    "keywords": ["weather", "forecast", "laravel"],
+    "authors": [
+        {
+            "name": "Jaime Cortes",
+            "email": "jaicores@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "autoload": {
+        "psr-4":
+        {
+            "JaimeCores\\WeatherPackage\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JaimeCores\\WeatherPackage\\Tests\\": "tests",
+            "JaimeCores\\WeatherPackage\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.7",
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-f": "vendor/bin/phpunit --filter"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JaimeCores\\WeatherPackage\\WeatherPackageServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
