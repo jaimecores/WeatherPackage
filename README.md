@@ -26,13 +26,13 @@ Laravel Package to let us know the 5-day weather forecast for a guest identified
 - Install dependencies: `composer install`
 - Testing: `composer test`
 
-### Installion in a Laravel app
+### Installation in a Laravel app
 
 - Require package: `composer require jaimecores/weatherpackage`
 - Install package: `php artisan weatherpackage:install`
 
 #### Optional
 
-- Publish the package assets: `php artisan vendor:publish --provider="JaimeCores\WeatherPackage\WeatherPackageServiceProvider" --tag="tagName"` (tagName = config, migrations, views, assets)
+- Publish the package assets: `php artisan vendor:publish --provider="JaimeCores\WeatherPackage\WeatherPackageServiceProvider" --tag="tagName"` (E.g. tagName = config, migrations, views, assets)
 
 - Return data when called via the CLI: `php artisan weatherpackage:getweather IPAddress` (E.g. IPAddress = 123.211.61.50)
